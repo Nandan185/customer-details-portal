@@ -22,13 +22,13 @@ const Grid = () => {
       clearInterval(interval);
       setTimeout(() => {
         setToastVisible(false);
-      }, 10000);
+      }, 5000);
     }
   };
 
   useEffect(() => {
     fetchImages();
-    interval = setInterval(fetchImages, 1000);
+    interval = setInterval(fetchImages, 10000);
     return () => clearInterval(interval);
   }, []);
 
