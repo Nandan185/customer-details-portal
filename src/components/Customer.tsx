@@ -11,7 +11,7 @@ export function CustomerSingle({
 }) {
   return (
     <div
-      className="flex flex-col gap-y-2 border-2 p-2 rounded cursor-pointer"
+      className="flex flex-col gap-y-2 border-2 p-2 rounded cursor-pointer hover:bg-[#f0f0f0]"
       style={{
         backgroundColor:
           selectedCustomer && selectedCustomer.id === customer.id
@@ -22,7 +22,7 @@ export function CustomerSingle({
     >
       <div className="flex flex-col card">
         <div>{customer.name}</div>
-        <div className="line-clamp-2">{customer.title}</div>
+        <div className="line-clamp-2 text-sm">{customer.title}</div>
       </div>
     </div>
   );

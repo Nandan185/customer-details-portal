@@ -23,7 +23,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex-1 border rounded overflow-auto ">
+      <div className="flex-1 border rounded overflow-auto bg-[#f0f0f0]">
         {selectedCustomer && <CustomerDetails customer={selectedCustomer} />}
         {!selectedCustomer && (
           <h1 className="text-center text-xl">Select a customer</h1>
